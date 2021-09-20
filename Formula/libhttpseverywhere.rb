@@ -4,7 +4,7 @@ class Libhttpseverywhere < Formula
   url "https://download.gnome.org/sources/libhttpseverywhere/0.8/libhttpseverywhere-0.8.3.tar.xz"
   sha256 "1c006f5633842a2b131c1cf644ab929556fc27968a60da55c00955bd4934b6ca"
   license "LGPL-3.0-or-later"
-  revision 4
+  revision 5
 
   bottle do
     sha256 cellar: :any, arm64_big_sur: "006bf3748d65067509e5b2e6d506f3b0a9a52c5eaab54780850b70b7f82ff249"
@@ -24,7 +24,7 @@ class Libhttpseverywhere < Formula
   depends_on "json-glib"
   depends_on "libarchive"
   depends_on "libgee"
-  depends_on "libsoup"
+  depends_on "libsoup@2"
 
   # see https://gitlab.gnome.org/GNOME/libhttpseverywhere/issues/1
   # remove when next version is released
