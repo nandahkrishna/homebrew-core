@@ -3,6 +3,7 @@ class Gssdp < Formula
   homepage "https://wiki.gnome.org/GUPnP/"
   url "https://download.gnome.org/sources/gssdp/1.4/gssdp-1.4.0.1.tar.xz"
   sha256 "8676849d57fb822b8728856dbadebf3867f89ee47a0ec47a20045d011f431582"
+  revision 1
 
   bottle do
     rebuild 1
@@ -20,7 +21,7 @@ class Gssdp < Formula
   depends_on "vala" => :build
   depends_on "gettext"
   depends_on "glib"
-  depends_on "libsoup"
+  depends_on "libsoup@2"
 
   def install
     mkdir "build" do
