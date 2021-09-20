@@ -3,7 +3,7 @@ class Librest < Formula
   homepage "https://wiki.gnome.org/Projects/Librest"
   url "https://download.gnome.org/sources/rest/0.8/rest-0.8.1.tar.xz"
   sha256 "0513aad38e5d3cedd4ae3c551634e3be1b9baaa79775e53b2dba9456f15b01c9"
-  revision 3
+  revision 4
 
   bottle do
     sha256                               arm64_big_sur: "a565482a9685164d288df713142f23b91dda71fc9c694ea0c613c64320e4aa0a"
@@ -17,7 +17,7 @@ class Librest < Formula
   depends_on "gobject-introspection" => :build
   depends_on "pkg-config" => :build
   depends_on "glib"
-  depends_on "libsoup"
+  depends_on "libsoup@2"
 
   def install
     system "./configure", "--disable-dependency-tracking",
