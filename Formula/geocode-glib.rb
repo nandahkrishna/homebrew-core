@@ -4,7 +4,7 @@ class GeocodeGlib < Formula
   url "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.2.tar.xz"
   sha256 "01fe84cfa0be50c6e401147a2bc5e2f1574326e2293b55c69879be3e82030fd1"
   license "GPL-2.0-or-later"
-  revision 1
+  revision 2
 
   bottle do
     sha256 cellar: :any,                 arm64_big_sur: "878e80675652cec9dd995eb7d896681db3203a8567cce2b35577fbc952cb8be0"
@@ -21,7 +21,7 @@ class GeocodeGlib < Formula
   depends_on "pkg-config" => :build
   depends_on "gtk+3"
   depends_on "json-glib"
-  depends_on "libsoup"
+  depends_on "libsoup@2"
 
   def install
     mkdir "build" do
