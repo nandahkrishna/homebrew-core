@@ -3,7 +3,7 @@ class GnomeRecipes < Formula
   homepage "https://wiki.gnome.org/Apps/Recipes"
   url "https://download.gnome.org/sources/gnome-recipes/2.0/gnome-recipes-2.0.2.tar.xz"
   sha256 "1be9d2fcb7404a97aa029d2409880643f15071c37039247a6a4320e7478cd5fb"
-  revision 15
+  revision 16
 
   bottle do
     sha256 arm64_big_sur: "a383ac85885a09d8c959af00fda8ab9fd6599b4347ce26929b6ed67bf9735e05"
@@ -24,7 +24,7 @@ class GnomeRecipes < Formula
   depends_on "libarchive"
   depends_on "libcanberra"
   depends_on "librest" # for goa
-  depends_on "libsoup"
+  depends_on "libsoup@2"
   depends_on "libxml2"
 
   resource "goa" do
